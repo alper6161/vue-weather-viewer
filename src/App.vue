@@ -33,5 +33,7 @@ import Menu from './components/menu.vue';
 
   .content {
     margin-left: 9rem;
+    min-height: 100vh;
+    padding: 25px;
   }
 </style>
