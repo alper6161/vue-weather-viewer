@@ -26,8 +26,7 @@ export default {
     width: 9rem;
     display: flex;
     flex-direction: column;
-    color: #FFFFFF;
-    background-color: #393939;
+    background-color: #1D2731;
   }
 
   .menu-item {

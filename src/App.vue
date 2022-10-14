@@ -25,6 +25,7 @@ import Menu from './components/menu.vue';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #D9D9D9;
   }
 
   body {
@@ -34,6 +35,5 @@ import Menu from './components/menu.vue';
   .content {
     margin-left: 9rem;
     min-height: 100vh;
-    padding: 25px;
   }
 </style>

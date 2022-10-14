@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <img class="logo" src="../assets/logo.png" />
     <h3> Weather App</h3>
   </div>
 </template>
@@ -15,9 +16,14 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
-    background-color: #393939;
+    background-color: #1D2731;
     height: 3rem;
+  }
+
+  .logo {
+    max-height: 2.8rem;
+    max-width: 4rem;
+    margin-right: .5rem;
   }
 
 </style>
