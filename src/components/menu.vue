@@ -1,5 +1,18 @@
+<script>
+import {useMenuHandler} from "@/stores/common";
+
+export default {
+  name: "menu",
+  methods: {
+    isMenuOpen() {
+      return useMenuHandler().isMenuOpen
+    },
+  }
+}
+</script>
+
 <template>
-  <div class="container">
+  <div class="container" :class="isMenuOpen() ? 'large-menu-width' : 'small-menu-width'">
     <div class="menu-item">
       <font-awesome-icon icon="fa-solid fa-sun" class="menu-item-icon"/>
       <router-link to="/">Dashboard</router-link>
@@ -11,22 +24,28 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "menu"
-}
-</script>
-
 <style scoped>
   .container {
     position: absolute;
     left: 0;
     top: 3rem;
     bottom: 0;
-    width: 9rem;
     display: flex;
     flex-direction: column;
     background-color: #1D2731;
+    overflow: hidden;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .large-menu-width {
+    width: 9rem;
+  }
+
+  .small-menu-width {
+    width: 2.5rem;
   }
 
   .menu-item {
@@ -35,6 +54,7 @@ export default {
     display: flex;
     align-items: center;
     margin-left: 1rem;
+    font-size: 18px;
   }
 
   .menu-item-icon {
@@ -44,5 +64,4 @@ export default {
   a {
     color: #FFFFFF!important;
   }
-
 </style>

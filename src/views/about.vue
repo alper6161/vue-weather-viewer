@@ -24,6 +24,7 @@ export default {
       <br/><br/> This project includes:
       <li> Router</li>
       <li> Proper View & Component Project Structure</li>
+      <li> Proper State Management with Pinia</li>
       <li> Dynamic Navigation Menu (Coming Soon)</li>
       <li> Editable Dashboard (Coming Soon) </li>
       <li> Live Map (Coming Soon) </li>
